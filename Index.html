@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hamburger Icon Animation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu" id="menu">
+                <div>
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+            
+            <div class="menu2" id="menu2">
+                <div>
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            var menu = document.getElementById("menu");
+            var menu2 = document.getElementById("menu2");
+
+            menu.onclick = function(){
+                menu.classList.toggle("openmenu");
+            }
+            menu2.onclick = function(){
+                menu2.classList.toggle("openmenu2");
+            }
+        </script>
+        
+    </body>
+</html>
